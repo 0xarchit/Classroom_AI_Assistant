@@ -2,6 +2,8 @@
 
 This project integrates emotion detection, voice-to-text, AI processing, and text-to-voice capabilities into a web-based teaching assistant system. Powered by FastAPI and LLaMA 3.1 3B, it bridges the gap between human emotions and AI responses, creating a real-time emotion-driven interaction experience.
 
+🌟 Give This Repo A Star If You Like 🌟
+
 ## Features
 
 - **Emotion Detection**: Detects user's facial emotions in real-time using DeepFace and OpenCV
@@ -58,45 +60,19 @@ graph TD
     Server -->|Audio & Images & Text| WebSocket
 ```
 
-## Setup Instructions
+## Demo
 
-### Prerequisites
+### Screenshots
 
-- Python 3.8 or higher
-- Webcam for emotion detection
-- Microphone for voice input
-- Internet connection for AI processing and image search
+![AI Teaching Assistant Interface](asset/screenshot.jpeg)
+*Screenshot: Main interface showing the emotion-aware Classroom AI assistant with real-time camera feed and chat interface*
 
-### Installation
+### Screen Recording
+See the AI Classroom Assistant in action:
 
-1. Clone the repository or navigate to the project directory
+[Watch Demo](asset/screenrecord.mp4)
 
-2. Install dependencies:
-   ```
-   pip install -r requirements.txt
-   ```
-
-3. Set up environment variables:
-   - Rename `.env.example` to `.env` (or create a new `.env` file)
-   - Add your RapidAPI key for image search
-   - Configure any other environment variables as needed
-   
-   Example `.env` file:
-   ```
-   RAPIDAPI_KEY="your_rapidapi_key_here"
-   RAPIDAPI_HOST="real-time-image-search.p.rapidapi.com"
-   AI_MODEL_URL="http://localhost:12345/v1/chat/completions"
-   ```
-
-4. Run the server:
-   ```
-   python server.py
-   ```
-
-5. Open your browser and navigate to:
-   ```
-   http://localhost:8000
-   ```
+*Video: Complete demonstration of the AI Teaching Assistant system showing emotion detection, voice interaction, and AI responses*
 
 ## Usage
 
@@ -125,10 +101,13 @@ graph TD
 
 ```
 version1/
-├── README.md               # Project documentation
-├── requirements.txt        # Python dependencies
-├── server.py               # Main server entry point
-├── .env                    # Environment Variables
+├── README.md                     # Project documentation
+├── requirements.txt              # Python dependencies
+├── server.py                     # Main server entry point
+├── .env                          # Environment Variables
+├── asset/
+│   ├── screenrecord.mp4          # Demo video showing system functionality
+│   └── screenshot.jpeg           # Interface screenshot
 ├── backend/
 │   ├── emotion_processor.py      # Emotion detection processing
 │   ├── haarcascade_frontalface_default.xml  # Face detection model
@@ -189,6 +168,47 @@ This isn't just an API wrapper—it's a complete system with:
 ### Dataset and Model
 - Dataset: [Ques-Ans-with-Emotion](https://huggingface.co/datasets/0xarchit/Ques-Ans-with-Emotion) - 9,000+ emotion-labeled Q&A pairs
 - Model: [AI Teaching Assistant](https://huggingface.co/0xarchit/ai_teaching_assistant) - Fine-tuned LLaMA 3.1 3B
+
+## Setup Instructions
+
+### Prerequisites
+
+- Python 3.8 or higher
+- Webcam for emotion detection
+- Microphone for voice input
+- Internet connection for AI processing and image search
+
+### Installation
+
+1. Clone the repository or navigate to the project directory
+
+2. Install dependencies:
+   ```
+   pip install -r requirements.txt
+   ```
+
+3. Set up environment variables:
+   - Rename `.env.example` to `.env` (or create a new `.env` file)
+   - Add your RapidAPI key for image search
+   - Configure any other environment variables as needed
+   
+   Example `.env` file:
+   ```
+   RAPIDAPI_KEY="your_rapidapi_key_here"
+   RAPIDAPI_HOST="real-time-image-search.p.rapidapi.com"
+   AI_MODEL_URL="http://localhost:12345/v1/chat/completions"
+   ```
+
+4. Run the server:
+   ```
+   python server.py
+   ```
+
+5. Open your browser and navigate to:
+   ```
+   http://localhost:8000
+   ```
+
 
 ## Troubleshooting
 
