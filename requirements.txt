@@ -1,0 +1,26 @@
+# FastAPI and server dependencies
+fastapi==0.104.1
+uvicorn[standard]==0.24.0
+python-multipart==0.0.6
+pydantic==2.5.0
+jinja2==3.1.2
+websockets==12.0
+
+# Computer vision and emotion detection
+opencv-python==4.8.1.78
+deepface==0.0.79
+tensorflow==2.15.0
+numpy==1.24.3
+Pillow==10.1.0
+
+# Speech processing
+speech-recognition==3.10.0
+pyttsx3==2.90
+edge-tts==6.1.9
+pygame==2.5.2
+pyaudio==0.2.11
+
+# HTTP and API clients
+httpx==0.25.2
+duckduckgo-search==3.9.6
+python-dotenv==1.0.0
