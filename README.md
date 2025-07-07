@@ -2,7 +2,12 @@
 
 This project integrates emotion detection, voice-to-text, AI processing, and text-to-voice capabilities into a web-based teaching assistant system. Powered by FastAPI and LLaMA 3.1 3B, it bridges the gap between human emotions and AI responses, creating a real-time emotion-driven interaction experience.
 
-🌟 Give This Repo A Star If You Like 🌟
+## Problem Statement:
+Modern classrooms lack real-time, interactive tools to address diverse student needs and keep them engaged. The objective is to create a multimodal AI assistant that:
+
+- Accepts and processes text and voice queries from students in real-time.
+- Provides contextual responses, including textual explanations, charts, and visual aids.
+- Detects disengagement or confusion using facial expression analysis.
 
 ## Features
 
@@ -219,3 +224,5 @@ This isn't just an API wrapper—it's a complete system with:
 ## License
 
 This project is part of the Intel Unnati program, completed by team Bitbots.
+
+🌟 Give This Repo A Star If You Like 🌟
