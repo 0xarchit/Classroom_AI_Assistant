@@ -4,7 +4,7 @@ This project integrates emotion detection, voice-to-text, AI processing, and tex
 
 ## Features
 
-- **Emotion Detection**: Detects user's facial emotions in real-time using DeepFace
+- **Emotion Detection**: Detects user's facial emotions in real-time using DeepFace and OpenCV
 - **Voice-to-Text**: Converts user's speech to text for natural language input
 - **AI Processing**: Processes user queries with emotion-aware AI responses
 - **Image Search**: Finds relevant images based on contextual prompts
@@ -154,7 +154,7 @@ version1/
 - Local model deployment with optimized inference for responsive interactions
 
 ### Emotion Detection
-- DeepFace with real-time webcam processing
+- DeepFace & OpenCV with real-time webcam processing
 - Base64 image encoding for efficient WebSocket transmission
 - Continuous emotional state tracking with state management
 
