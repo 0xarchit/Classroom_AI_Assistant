@@ -181,7 +181,7 @@ This isn't just an API wrapper—it's a complete system with:
 - Python 3.8 or higher
 - Webcam for emotion detection
 - Microphone for voice input
-- Internet connection for AI processing and image search
+- Internet connection for image search
 
 ### Installation
 
